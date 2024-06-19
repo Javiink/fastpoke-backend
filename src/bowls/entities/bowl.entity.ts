@@ -17,10 +17,10 @@ export class Bowl {
   @Prop()
   image: string;
 
-  @Prop()
+  @Prop({type: { medium: Number, large: Number }})
   price?: {
-    medium: number,
-    large: number,
+    medium: number;
+    large: number;
   };
 }
 
