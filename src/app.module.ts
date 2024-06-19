@@ -8,6 +8,8 @@ import { BowlsModule } from './bowls/bowls.module';
 import { DrinksModule } from './drinks/drinks.module';
 import { SideDishesModule } from './side-dishes/side-dishes.module';
 import { CombosModule } from './combos/combos.module';
+import { ServeStaticModule } from '@nestjs/serve-static';
+import { join } from 'path';
 
 @Module({
   imports: [
@@ -18,6 +20,10 @@ import { CombosModule } from './combos/combos.module';
         uri: configService.database.uri
       }),
       inject: [CustomConfigService],
+    }),
+    ServeStaticModule.forRoot({
+      rootPath: join(__dirname, '../public'),
+      serveRoot: '/public/',
     }),
     BowlsModule,
     DrinksModule,
