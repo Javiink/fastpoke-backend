@@ -1,5 +1,5 @@
 import { Schema, Prop, SchemaFactory } from '@nestjs/mongoose';
-import { Document, ObjectId } from 'mongoose';
+import { Document, ObjectId, SchemaTypes } from 'mongoose';
 
 export type BowlDocument = Bowl & Document;
 
@@ -8,7 +8,7 @@ export class Bowl {
   @Prop()
   name: string;
 
-  @Prop()
+  @Prop([{ type: SchemaTypes.ObjectId, ref: 'Ingredient' }])
   ingredients: ObjectId[];
 
   @Prop()
@@ -17,7 +17,7 @@ export class Bowl {
   @Prop()
   image: string;
 
-  @Prop({type: { medium: Number, large: Number }})
+  @Prop({ type: { medium: Number, large: Number } })
   price?: {
     medium: number;
     large: number;

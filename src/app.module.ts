@@ -7,6 +7,7 @@ import { CustomConfigService } from './config/config.service';
 import { BowlsModule } from './bowls/bowls.module';
 import { DrinksModule } from './drinks/drinks.module';
 import { SideDishesModule } from './side-dishes/side-dishes.module';
+import { CombosModule } from './combos/combos.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { SideDishesModule } from './side-dishes/side-dishes.module';
     BowlsModule,
     DrinksModule,
     SideDishesModule,
+    CombosModule,
   ],
   controllers: [AppController],
   providers: [AppService],
