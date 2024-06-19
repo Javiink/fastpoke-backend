@@ -23,10 +23,10 @@ export class Combo {
   bowlSize: BowlSizes;
 
   @Prop({ type: SchemaTypes.ObjectId, ref: 'Sidedish' })
-  sidedish: ObjectId;
+  sidedish?: ObjectId;
 
   @Prop()
-  sidedishSize: SidedishSizes;
+  sidedishSize?: SidedishSizes;
 
   @Prop({ type: SchemaTypes.ObjectId, ref: 'Drink' })
   drink: ObjectId;
