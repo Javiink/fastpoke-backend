@@ -1,12 +1,17 @@
 import { Injectable } from '@nestjs/common';
+import { Model } from 'mongoose';
+import { Drink } from './entities/drink.entity';
+import { InjectModel } from '@nestjs/mongoose';
 
 @Injectable()
 export class DrinksService {
+  constructor(@InjectModel('Drink') private readonly drinkModel: Model<Drink>) {}
+
   findAll() {
-    return `This action returns all drinks`;
+    return this.drinkModel.find();
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} drink`;
+  findOne(id: string) {
+    return this.drinkModel.findById(id);
   }
 }
