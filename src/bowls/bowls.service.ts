@@ -11,10 +11,6 @@ export class BowlsService {
 
   async findAll(): Promise<Bowl[]> {
     const bowls = await this.bowlModel.find().exec();
-    bowls.forEach((bowl) => {
-      // Accede al virtual allergens después de haber recuperado los bowls
-      console.log('Allergens:', bowl.allergens);
-    });
     return bowls;
   }
 
