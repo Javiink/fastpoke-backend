@@ -10,6 +10,7 @@ import { SideDishesModule } from './side-dishes/side-dishes.module';
 import { CombosModule } from './combos/combos.module';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
+import { IngredientsModule } from './ingredients/ingredients.module';
 
 @Module({
   imports: [
@@ -25,6 +26,7 @@ import { join } from 'path';
       rootPath: join(__dirname, '../public'),
       serveRoot: '/public/',
     }),
+    IngredientsModule,
     BowlsModule,
     DrinksModule,
     SideDishesModule,

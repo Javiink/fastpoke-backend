@@ -1,5 +1,6 @@
 import { Controller, Get, Param } from '@nestjs/common';
 import { BowlsService } from './bowls.service';
+import { ValidateMongoId } from 'src/pipes/validation/mongo-id.pipe';
 
 @Controller('bowls')
 export class BowlsController {
@@ -11,7 +12,7 @@ export class BowlsController {
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.bowlsService.findOne(+id);
+  findOne(@Param('id', ValidateMongoId) id: string) {
+    return this.bowlsService.findOne(id);
   }
 }
