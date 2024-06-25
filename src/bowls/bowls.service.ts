@@ -10,8 +10,7 @@ export class BowlsService {
   ) {}
 
   async findAll(): Promise<Bowl[]> {
-    const bowls = await this.bowlModel.find().exec();
-    return bowls;
+    return await this.bowlModel.find().exec();
   }
 
   findOne(id: string) {

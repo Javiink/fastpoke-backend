@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { CombosController } from './combos.controller';
-import { CombosService } from './combos.service';
+import { CombosService } from './entities/combos.service';
 
 describe('CombosController', () => {
   let controller: CombosController;

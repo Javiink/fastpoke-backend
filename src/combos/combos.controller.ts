@@ -1,5 +1,6 @@
 import { Controller, Get, Param } from '@nestjs/common';
-import { CombosService } from './combos.service';
+import { CombosService } from './entities/combos.service';
+import { ValidateMongoId } from 'src/pipes/validation/mongo-id.pipe';
 
 @Controller('combos')
 export class CombosController {
@@ -11,7 +12,7 @@ export class CombosController {
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.combosService.findOne(+id);
+  findOne(@Param('id', ValidateMongoId) id: string) {
+    return this.combosService.findOne(id);
   }
 }

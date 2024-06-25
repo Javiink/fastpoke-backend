@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { CombosService } from './combos.service';
+import { CombosService } from './entities/combos.service';
 
 describe('CombosService', () => {
   let service: CombosService;

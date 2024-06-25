@@ -15,6 +15,9 @@ export class Drink {
   image: string;
 
   @Prop()
+  allergens?: string[];
+  
+  @Prop()
   price: number;
 }
 

@@ -1,6 +1,6 @@
 import { Schema, Prop, SchemaFactory } from '@nestjs/mongoose';
 import { Document, SchemaTypes } from 'mongoose';
-import { Ingredient, IngredientDocument } from 'src/ingredients/entities/ingredient.entity';
+import { IngredientDocument } from 'src/ingredients/entities/ingredient.entity';
 
 export type BowlDocument = Bowl & Document & {
   allergens: string[];
@@ -12,7 +12,7 @@ export class Bowl {
   name: string;
 
   @Prop([{ type: SchemaTypes.ObjectId, ref: 'Ingredient' }])
-  ingredients: Ingredient[];
+  ingredients: IngredientDocument[];
 
   @Prop()
   description?: string;
@@ -32,7 +32,7 @@ export const BowlSchema = SchemaFactory.createForClass(Bowl);
 
 BowlSchema.virtual('allergens').get(function (this: BowlDocument) {
   const allergenSet = new Set<string>();
-  this.ingredients.forEach((ingredient: IngredientDocument) => {
+  this.ingredients.forEach((ingredient) => {
     ingredient.allergens.forEach((allergen) => allergenSet.add(allergen));
   });
   return Array.from(allergenSet);

@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { CombosService } from './combos.service';
+import { CombosService } from './entities/combos.service';
 import { CombosController } from './combos.controller';
 import { MongooseModule } from '@nestjs/mongoose';
 import { Combo, ComboSchema } from './entities/combo.entity';
