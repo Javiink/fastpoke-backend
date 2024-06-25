@@ -4,7 +4,7 @@ import { BowlDocument } from 'src/bowls/entities/bowl.entity';
 import { DrinkDocument } from 'src/drinks/entities/drink.entity';
 import { BowlSizes } from 'src/enums/bowl-sizes.type';
 import { SidedishSizes } from 'src/enums/sidedish-sizes.type';
-import { SidedishDocument } from 'src/side-dishes/entities/side-dish.entity';
+import { SidedishDocument } from 'src/sidedishes/entities/sidedish.entity';
 
 export type ComboDocument = Combo & Document & {
     allergens: string[];

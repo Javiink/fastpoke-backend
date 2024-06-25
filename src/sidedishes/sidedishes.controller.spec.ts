@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { SideDishesController } from './side-dishes.controller';
-import { SideDishesService } from './side-dishes.service';
+import { SideDishesController } from './sidedishes.controller';
+import { SideDishesService } from './sidedishes.service';
 
 describe('SideDishesController', () => {
   let controller: SideDishesController;

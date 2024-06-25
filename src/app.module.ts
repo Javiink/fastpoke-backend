@@ -1,16 +1,17 @@
+import { join } from 'path';
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { MongooseModule } from '@nestjs/mongoose';
+import { ServeStaticModule } from '@nestjs/serve-static';
 import { CustomConfigModule } from './config/config.module';
 import { CustomConfigService } from './config/config.service';
-import { BowlsModule } from './bowls/bowls.module';
-import { DrinksModule } from './drinks/drinks.module';
-import { SideDishesModule } from './side-dishes/side-dishes.module';
-import { CombosModule } from './combos/combos.module';
-import { ServeStaticModule } from '@nestjs/serve-static';
-import { join } from 'path';
+import { AppService } from './app.service';
+import { AppController } from './app.controller';
+
 import { IngredientsModule } from './ingredients/ingredients.module';
+import { DrinksModule } from './drinks/drinks.module';
+import { SideDishesModule } from './sidedishes/sidedishes.module';
+import { BowlsModule } from './bowls/bowls.module';
+import { CombosModule } from './combos/combos.module';
 
 @Module({
   imports: [

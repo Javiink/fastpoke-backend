@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { SideDishesService } from './side-dishes.service';
+import { SideDishesService } from './sidedishes.service';
 
 describe('SideDishesService', () => {
   let service: SideDishesService;

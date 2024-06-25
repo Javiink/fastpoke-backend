@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
-import { SideDishesService } from './side-dishes.service';
-import { SideDishesController } from './side-dishes.controller';
+import { SideDishesService } from './sidedishes.service';
+import { SideDishesController } from './sidedishes.controller';
 import { MongooseModule } from '@nestjs/mongoose';
-import { Sidedish, SidedishSchema } from './entities/side-dish.entity';
+import { Sidedish, SidedishSchema } from './entities/sidedish.entity';
 
 @Module({
   imports: [
