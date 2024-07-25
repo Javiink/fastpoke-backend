@@ -1,5 +1,6 @@
 import { Schema, Prop, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
+import { SidedishSizes } from 'src/enums/sidedish-sizes.type';
 
 export type SidedishDocument = Sidedish & Document;
 
@@ -17,11 +18,11 @@ export class Sidedish {
   @Prop()
   allergens?: string[];
 
-  @Prop({type: {small: Number, medium: Number}})
-  price: {
-    small: number;
-    medium: number;
-  };
+  @Prop({ type: [{ name: String, price: Number }], _id: false })
+  sizes?: {
+    name: SidedishSizes;
+    price: number;
+  }[];
 }
 
 export const SidedishSchema = SchemaFactory.createForClass(Sidedish);

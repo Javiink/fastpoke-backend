@@ -1,5 +1,6 @@
 import { Schema, Prop, SchemaFactory } from '@nestjs/mongoose';
 import { Document, SchemaTypes } from 'mongoose';
+import { BowlSizes } from 'src/enums/bowl-sizes.type';
 import { IngredientDocument } from 'src/ingredients/entities/ingredient.entity';
 
 export type BowlDocument = Bowl & Document & {
@@ -20,11 +21,11 @@ export class Bowl {
   @Prop()
   image: string;
 
-  @Prop({ type: { medium: Number, large: Number } })
-  price?: {
-    medium: number;
-    large: number;
-  };
+  @Prop({ type: [{ name: String, price: Number }], _id: false })
+  sizes?: {
+    name: BowlSizes;
+    price: number;
+  }[];
 
 }
 
@@ -42,8 +43,6 @@ BowlSchema.set('toJSON', {
   virtuals: true,
   transform: function (doc, ret) {
     delete ret._id;
-    delete ret.price.id;
-    delete ret.price._id;
     return ret;
   },
 });
