@@ -9,7 +9,7 @@ export class Ingredient {
   @Prop()
   name: string;
 
-  @Prop()
+  @Prop({ type: String})
   slot: IngredientSlots;
 
   @Prop()

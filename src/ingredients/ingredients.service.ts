@@ -17,4 +17,8 @@ export class IngredientsService {
   findOne(id: string) {
     return this.ingredientModel.findById(id);
   }
+
+  findBySlot(slot: string){
+    return this.ingredientModel.find({slot});
+  }
 }

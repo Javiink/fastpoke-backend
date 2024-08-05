@@ -15,4 +15,9 @@ export class IngredientsController {
   findOne(@Param('id', ValidateMongoId) id: string) {
     return this.ingredientService.findOne(id);
   }
+
+  @Get('slot/:slot')
+  findBySlot(@Param('slot') slot: string) {
+    return this.ingredientService.findBySlot(slot);
+  }
 }
