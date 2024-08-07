@@ -22,3 +22,12 @@ export class Drink {
 }
 
 export const DrinkSchema = SchemaFactory.createForClass(Drink);
+
+DrinkSchema.set('toJSON', {
+  virtuals: true,
+  transform: function (doc, ret) {
+    ret.id = ret._id;
+    delete ret._id;
+    return ret;
+  },
+});

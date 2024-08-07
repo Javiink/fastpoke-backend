@@ -54,6 +54,7 @@ ComboSchema.virtual('allergens').get(function (this: ComboDocument) {
 ComboSchema.set('toJSON', {
   virtuals: true,
   transform: function (doc, ret) {
+    ret.id = ret._id;
     delete ret._id;
     delete ret.price.id;
     delete ret.price._id;

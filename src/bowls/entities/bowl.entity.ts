@@ -42,6 +42,7 @@ BowlSchema.virtual('allergens').get(function (this: BowlDocument) {
 BowlSchema.set('toJSON', {
   virtuals: true,
   transform: function (doc, ret) {
+    ret.id = ret._id;
     delete ret._id;
     return ret;
   },
