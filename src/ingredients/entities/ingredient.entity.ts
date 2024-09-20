@@ -1,6 +1,6 @@
 import { Schema, Prop, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
-import { IngredientSlots } from 'src/enums/ingredient-slot.type';
+import { IngredientSlots } from 'src/common/enums/ingredient-slot.type';
 
 export type IngredientDocument = Ingredient & Document;
 

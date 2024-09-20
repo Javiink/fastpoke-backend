@@ -1,6 +1,6 @@
 import { Controller, Get, Param } from '@nestjs/common';
 import { SideDishesService } from './sidedishes.service';
-import { ValidateMongoId } from 'src/pipes/validation/mongo-id.pipe';
+import { ValidateMongoId } from 'src/common/pipes/validation/mongo-id.pipe';
 
 @Controller('sidedishes')
 export class SideDishesController {

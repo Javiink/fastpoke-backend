@@ -1,6 +1,6 @@
 import { Schema, Prop, SchemaFactory } from '@nestjs/mongoose';
 import { Document, SchemaTypes } from 'mongoose';
-import { BowlSizes } from 'src/enums/bowl-sizes.type';
+import { BowlSizes } from 'src/common/enums/bowl-sizes.type';
 import { IngredientDocument } from 'src/ingredients/entities/ingredient.entity';
 
 export type BowlDocument = Bowl & Document & {

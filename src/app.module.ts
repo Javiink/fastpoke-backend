@@ -2,8 +2,8 @@ import { join } from 'path';
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ServeStaticModule } from '@nestjs/serve-static';
-import { CustomConfigModule } from './config/config.module';
-import { CustomConfigService } from './config/config.service';
+import { CustomConfigModule } from './common/config/config.module';
+import { CustomConfigService } from './common/config/config.service';
 import { AppService } from './app.service';
 import { AppController } from './app.controller';
 

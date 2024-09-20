@@ -1,6 +1,6 @@
 import { Schema, Prop, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
-import { SidedishSizes } from 'src/enums/sidedish-sizes.type';
+import { SidedishSizes } from 'src/common/enums/sidedish-sizes.type';
 
 export type SidedishDocument = Sidedish & Document;
 

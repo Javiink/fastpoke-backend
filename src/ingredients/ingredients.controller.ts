@@ -1,6 +1,6 @@
 import { Controller, Get, Param } from '@nestjs/common';
 import { IngredientsService } from './ingredients.service';
-import { ValidateMongoId } from 'src/pipes/validation/mongo-id.pipe';
+import { ValidateMongoId } from 'src/common/pipes/validation/mongo-id.pipe';
 
 @Controller('ingredients')
 export class IngredientsController {
