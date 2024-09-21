@@ -10,7 +10,7 @@ export class CustomConfigService {
       nodeEnv: this.configService.get<string>('NODE_ENV'),
       port: this.configService.get<number>('APP_PORT'),
       corsHost: this.configService.get<string>('CORS_HOST'),
-      thumbsPath: this.configService.get<string>('THUMBS_PATH'),
+      imagesPath: this.configService.get<string>('IMAGES_PATH'),
     };
   }
 

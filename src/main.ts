@@ -1,13 +1,12 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
-import { ConfigService } from '@nestjs/config';
+import { CustomConfigService } from './common/config/config.service';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  const configService = app.get(ConfigService);
+  const configService = app.get(CustomConfigService);
   app.enableCors({
-    origin: configService.get('CORS_HOST'),
     optionsSuccessStatus: 200
   });
   app.setGlobalPrefix('api', {exclude: ['kiosk', 'public']});
@@ -18,6 +17,6 @@ async function bootstrap() {
   const documentation = SwaggerModule.createDocument(app, swaggerOptions); 
   SwaggerModule.setup('docs', app, documentation);
 
-  await app.listen(configService.get('APP_PORT'));
+  await app.listen(configService.app.port);
 }
 bootstrap();

@@ -1,8 +1,8 @@
 import { Global, Injectable, Logger, OnApplicationBootstrap, OnModuleInit } from '@nestjs/common';
-import { ConfigService } from '@nestjs/config';
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'fs';
 import * as path from 'path';
 import * as sharp from 'sharp';
+import { CustomConfigService } from '../config/config.service';
 
 @Global()
 @Injectable()
@@ -10,10 +10,9 @@ export class ThumbnailService implements OnModuleInit, OnApplicationBootstrap {
   private static instance: ThumbnailService;
   private readonly logger = new Logger(ThumbnailService.name);
 
-  imagesPath = this.configService.get('IMAGES_PATH');
+  imagesPath = this.configService.app.imagesPath;
 
-  constructor(private configService: ConfigService) {}
-
+  constructor(private configService: CustomConfigService) {}
 
   onModuleInit() {
     ThumbnailService.instance = this;
