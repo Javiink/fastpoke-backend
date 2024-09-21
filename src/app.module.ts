@@ -12,6 +12,7 @@ import { DrinksModule } from './drinks/drinks.module';
 import { SideDishesModule } from './sidedishes/sidedishes.module';
 import { BowlsModule } from './bowls/bowls.module';
 import { CombosModule } from './combos/combos.module';
+import { ThumbnailService } from './common/services/thumbnail.service';
 
 @Module({
   imports: [
@@ -34,6 +35,6 @@ import { CombosModule } from './combos/combos.module';
     CombosModule,
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [AppService, ThumbnailService],
 })
 export class AppModule {}
