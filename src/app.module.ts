@@ -13,6 +13,7 @@ import { SideDishesModule } from './sidedishes/sidedishes.module';
 import { BowlsModule } from './bowls/bowls.module';
 import { CombosModule } from './combos/combos.module';
 import { ThumbnailService } from './common/services/thumbnail.service';
+import { OrdersModule } from './orders/orders.module';
 
 @Module({
   imports: [
@@ -33,6 +34,7 @@ import { ThumbnailService } from './common/services/thumbnail.service';
     DrinksModule,
     SideDishesModule,
     CombosModule,
+    OrdersModule,
   ],
   controllers: [AppController],
   providers: [AppService, ThumbnailService],
