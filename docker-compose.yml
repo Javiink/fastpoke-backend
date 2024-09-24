@@ -1,0 +1,52 @@
+
+services:
+  fastpoke-api:
+    container_name: fastpoke-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - ${APP_PORT:-80}:${APP_PORT:-80}
+    networks:
+      - fastpoke-net
+    depends_on:
+      - fastpoke-db
+    restart: always
+
+  fastpoke-db:
+    container_name: fastpoke-db
+    image: mongo
+    command: mongod --logpath /dev/null
+    volumes:
+      - fastpoke-db:/data/db
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+    environment:
+      - MONGO_INITDB_USERNAME=${MONGODB_USERNAME:-fastpoke}
+      - MONGO_INITDB_PASSWORD=${MONGODB_PASSWORD:-Ch4nG3m3pL34se}
+      - MONGO_INITDB_DATABASE=${MONGODB_DATABASE:-fastpoke}
+    restart: always
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "mongosh",
+          "--quiet",
+          "127.0.0.1/${MONGODB_DATABASE:-fastpoke}",
+          "--eval",
+          "'quit(db.runCommand({ ping: 1 }).ok ? 0 : 2)'",
+        ]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 10s
+    ports:
+      - '27020:27017'
+    networks:
+      - fastpoke-net
+
+networks:
+  fastpoke-net:
+    driver: bridge
+
+volumes:
+  fastpoke-db:
