@@ -1,0 +1,36 @@
+[
+  {
+    "_id": { "$oid": "6672c2fe66c99d106975ef11" },
+    "name": "Basic",
+    "description": "Simple, healthy, and always satisfying, a poke for every day.",
+    "image": "combo-basic.png",
+    "bowl": { "$oid": "6676a42547a88f4b8fa8c7b7" },
+    "bowlSize": "medium",
+    "drink": { "$oid": "6672afc666c99d106975eeeb" },
+    "price": 8.9
+  },
+  {
+    "_id": { "$oid": "6672c2fe66c99d106975ef12" },
+    "name": "Vegan",
+    "description": "Plant-based power in a bowl, a poke with a conscious twist.",
+    "image": "combo-vegan.png",
+    "bowl": { "$oid": "6676a42547a88f4b8fa8c7ba" },
+    "bowlSize": "large",
+    "sidedish": { "$oid": "6672ae9b66c99d106975eee6" },
+    "sidedishSize": "medium",
+    "drink": { "$oid": "66769e0e47a88f4b8fa8c7b1" },
+    "price": 16.9
+  },
+  {
+    "_id": { "$oid": "6672c2fe66c99d106975ef13" },
+    "name": "Asian",
+    "description": "Experience Asia in a bowl with flavors that pack a punch.",
+    "image": "combo-asian.png",
+    "bowl": { "$oid": "6676a42547a88f4b8fa8c7b9" },
+    "bowlSize": "medium",
+    "sidedish": { "$oid": "6672ae9b66c99d106975eee8" },
+    "sidedishSize": "medium",
+    "drink": { "$oid": "6672abec66c99d106975eee2" },
+    "price": 14.5
+  }
+]

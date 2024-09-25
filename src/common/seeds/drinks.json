@@ -1,0 +1,44 @@
+[
+  {
+    "_id": { "$oid": "6672abec66c99d106975eee0" },
+    "name": "Coke",
+    "description": "Classic fizzy fix, perfect for that poke vibe.",
+    "image": "coke.png",
+    "price": 2.5
+  },
+  {
+    "_id": { "$oid": "6672abec66c99d106975eee1" },
+    "name": "Komvida Apple",
+    "description": "A kombucha-apple blend to refresh your poke cravings.",
+    "image": "kombucha-apple.png",
+    "price": 3.5
+  },
+  {
+    "_id": { "$oid": "6672abec66c99d106975eee2" },
+    "name": "Apple juice",
+    "description": "Freshly pressed cider apple juice for a sweet, tangy sip.",
+    "image": "apple-juice.png",
+    "price": 3
+  },
+  {
+    "_id": { "$oid": "6672afc666c99d106975eeeb" },
+    "name": "Water",
+    "description": "Stay hydrated, pure and simple.",
+    "image": "mineral-water.png",
+    "price": 1.5
+  },
+  {
+    "_id": { "$oid": "66769dfa47a88f4b8fa8c7af" },
+    "name": "Komvida Berries",
+    "description": "Berries and kombucha, a fruity twist for your poke bowl.",
+    "image": "kombucha-berries.png",
+    "price": 3.5
+  },
+  {
+    "_id": { "$oid": "66769e0e47a88f4b8fa8c7b1" },
+    "name": "Komvida Supergreen",
+    "description": "Go green with this kombucha, perfect for health-conscious poke fans.",
+    "image": "kombucha-supergreen.png",
+    "price": 3.5
+  }
+]

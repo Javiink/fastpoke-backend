@@ -16,10 +16,12 @@ services:
   fastpoke-db:
     container_name: fastpoke-db
     image: mongo
-    command: mongod --logpath /dev/null
+    command: mongod --quiet --logpath /dev/null
     volumes:
       - fastpoke-db:/data/db
       - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+      - ./mongo-seed.sh:/docker-entrypoint-initdb.d/mongo-seed.sh
+      - ./src/common/seeds:/seeds
     environment:
       - MONGO_INITDB_USERNAME=${MONGODB_USERNAME:-fastpoke}
       - MONGO_INITDB_PASSWORD=${MONGODB_PASSWORD:-Ch4nG3m3pL34se}

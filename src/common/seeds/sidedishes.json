@@ -1,0 +1,77 @@
+[
+  {
+    "_id": {
+      "$oid": "6672ae9b66c99d106975eee6"
+    },
+    "name": "Carrot sticks",
+    "description": "Crunchy and fresh, perfect for a light poke pairing.",
+    "image": "carrot-sticks.png",
+    "sizes": [
+      {
+        "name": "small",
+        "price": 0.6
+      },
+      {
+        "name": "medium",
+        "price": 1
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6672ae9b66c99d106975eee7"
+    },
+    "name": "Apple slices",
+    "description": "A refreshing sweet bite to cleanse your palate.",
+    "image": "apple-slices.png",
+    "sizes": [
+      {
+        "name": "small",
+        "price": 0.75
+      },
+      {
+        "name": "medium",
+        "price": 1.2
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6672ae9b66c99d106975eee8"
+    },
+    "name": "Hard-boiled egg",
+    "description": "Protein-packed halves for your poke power-up.",
+    "image": "boiled-egg.png",
+    "sizes": [
+      {
+        "name": "small",
+        "price": 1.2
+      },
+      {
+        "name": "medium",
+        "price": 2
+      }
+    ],
+    "allergens": [
+      "egg"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6672c1cb66c99d106975ef05"
+    },
+    "name": "Potato chips",
+    "description": "Crispy air-fried goodness, because every poke needs crunch.",
+    "image": "potato-chips.png",
+    "sizes": [
+      {
+        "name": "small",
+        "price": 0.75
+      },
+      {
+        "name": "medium",
+        "price": 1.1
+      }
+    ]
+  }
+]

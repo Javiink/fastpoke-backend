@@ -1,0 +1,80 @@
+[
+  {
+    "_id": { "$oid": "6676a42547a88f4b8fa8c7b7" },
+    "name": "Hawaiian",
+    "ingredients": [
+      { "$oid": "6670527fafb4f28ea1dd8772" },
+      { "$oid": "6670527fafb4f28ea1dd877c" },
+      { "$oid": "6670527fafb4f28ea1dd878b" },
+      { "$oid": "6670527fafb4f28ea1dd8791" },
+      { "$oid": "6670527fafb4f28ea1dd8782" },
+      { "$oid": "6670527fafb4f28ea1dd8777" },
+      { "$oid": "6670527fafb4f28ea1dd8792" }
+    ],
+    "description": "Aloha in a bowl, with tropical vibes and sushi rice goodness.",
+    "image": "hawaiian.png",
+    "sizes": [
+      { "name": "medium", "price": 7.9 },
+      { "name": "large", "price": 9.9 }
+    ]
+  },
+  {
+    "_id": { "$oid": "6676a42547a88f4b8fa8c7b8" },
+    "name": "Mare e monti",
+    "ingredients": [
+      { "$oid": "6670527fafb4f28ea1dd8774" },
+      { "$oid": "6670527fafb4f28ea1dd8776" },
+      { "$oid": "6670527fafb4f28ea1dd877e" },
+      { "$oid": "6670527fafb4f28ea1dd8788" },
+      { "$oid": "6670527fafb4f28ea1dd8782" },
+      { "$oid": "6670527fafb4f28ea1dd8785" },
+      { "$oid": "6670527fafb4f28ea1dd8784" },
+      { "$oid": "6670527fafb4f28ea1dd8793" }
+    ],
+    "description": "The ultimate surf 'n' turf poke experience, where land meets sea.",
+    "image": "mareemonti.png",
+    "sizes": [
+      { "name": "medium", "price": 9.9 },
+      { "name": "large", "price": 11.9 }
+    ]
+  },
+  {
+    "_id": { "$oid": "6676a42547a88f4b8fa8c7b9" },
+    "name": "Japanese",
+    "ingredients": [
+      { "$oid": "6670527fafb4f28ea1dd8772" },
+      { "$oid": "6670527fafb4f28ea1dd8777" },
+      { "$oid": "6670527fafb4f28ea1dd877b" },
+      { "$oid": "6670527fafb4f28ea1dd8786" },
+      { "$oid": "6670527fafb4f28ea1dd8788" },
+      { "$oid": "6670527fafb4f28ea1dd8791" },
+      { "$oid": "6670527fafb4f28ea1dd8792" }
+    ],
+    "description": "Traditional Japanese flavors in every bite, with seaweed and soy to match.",
+    "image": "japanese.png",
+    "sizes": [
+      { "name": "medium", "price": 10.9 },
+      { "name": "large", "price": 12.9 }
+    ]
+  },
+  {
+    "_id": { "$oid": "6676a42547a88f4b8fa8c7ba" },
+    "name": "Vegan",
+    "ingredients": [
+      { "$oid": "6670527fafb4f28ea1dd8773" },
+      { "$oid": "6670527fafb4f28ea1dd8777" },
+      { "$oid": "6670527fafb4f28ea1dd8780" },
+      { "$oid": "6670527fafb4f28ea1dd8781" },
+      { "$oid": "6670527fafb4f28ea1dd8784" },
+      { "$oid": "6670527fafb4f28ea1dd878b" },
+      { "$oid": "6670527fafb4f28ea1dd878a" },
+      { "$oid": "6670527fafb4f28ea1dd8791" }
+    ],
+    "description": "Plant-based perfection for the conscious eater, packed with color and flavor.",
+    "image": "vegan.png",
+    "sizes": [
+      { "name": "medium", "price": 11.9 },
+      { "name": "large", "price": 13.9 }
+    ]
+  }
+]

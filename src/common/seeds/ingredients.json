@@ -1,0 +1,316 @@
+[
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8772" },
+    "name": "Sushi rice",
+    "slot": "base",
+    "description": "Sticky rice that's the foundation of sushi dreams.",
+    "image": "sushi-rice.png",
+    "price": 0.3,
+    "allergens": ["gluten"]
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8773" },
+    "name": "Quinoa",
+    "slot": "base",
+    "description": "A supergrain that adds protein-packed goodness.",
+    "image": "quinoa.png",
+    "price": 0.5
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8774" },
+    "name": "Pasta",
+    "slot": "base",
+    "description": "Italian comfort in every twirl.",
+    "image": "pasta.png",
+    "price": 0.4,
+    "allergens": ["gluten"]
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8775" },
+    "name": "Lettuce",
+    "slot": "base",
+    "description": "Fresh, crisp, and light, \"lettuce\" be honest, it's great!",
+    "image": "lettuce.png",
+    "price": 0.2
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8776" },
+    "name": "Mayonnaise",
+    "slot": "sauce",
+    "description": "The creamy partner your poke was missing.",
+    "image": "mayonnaise.png",
+    "price": 0.3,
+    "allergens": ["egg"]
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8777" },
+    "name": "Soy sauce",
+    "slot": "sauce",
+    "description": "The salty sidekick every poke deserves.",
+    "image": "soy-sauce.png",
+    "price": 0.2,
+    "allergens": ["soy", "gluten"]
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8778" },
+    "name": "Teriyaki sauce",
+    "slot": "sauce",
+    "description": "Sweet, savory, and always satisfying.",
+    "image": "teriyaki-sauce.png",
+    "price": 0.3,
+    "allergens": ["soy", "gluten"]
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8779" },
+    "name": "Sriracha mayo",
+    "slot": "sauce",
+    "description": "Spicy, creamy, and with a kick of flavor.",
+    "image": "sriracha-mayo.png",
+    "price": 0.3,
+    "allergens": ["egg"]
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd877a" },
+    "name": "Pesto",
+    "slot": "sauce",
+    "description": "A basil blast with a hint of nuttiness.",
+    "image": "pesto.png",
+    "price": 0.3,
+    "allergens": ["nuts"]
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd877b" },
+    "name": "Salmon",
+    "slot": "protein",
+    "description": "Rich, flavorful fish, perfect for sushi lovers.",
+    "image": "salmon.png",
+    "price": 0.5,
+    "allergens": ["fish"]
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd877c" },
+    "name": "Tuna",
+    "slot": "protein",
+    "description": "Firm and fresh, the sea's finest offering.",
+    "image": "tuna.png",
+    "price": 0.5,
+    "allergens": ["fish"]
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd877d" },
+    "name": "Chicken",
+    "slot": "protein",
+    "description": "Versatile, lean, and delicious, just cluckin' good!",
+    "image": "chicken.png",
+    "price": 0.4
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd877e" },
+    "name": "Shrimp",
+    "slot": "protein",
+    "description": "Sweet and tender, the ocean's little treat.",
+    "image": "shrimp.png",
+    "price": 0.4,
+    "allergens": ["shellfish"]
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd877f" },
+    "name": "Tofu",
+    "slot": "protein",
+    "description": "Plant-powered protein for all.",
+    "image": "tofu.png",
+    "price": 0.3,
+    "allergens": ["soy"]
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8780" },
+    "name": "Heura",
+    "slot": "protein",
+    "description": "Plant-based chicken alternative that's seriously good.",
+    "image": "heura.png",
+    "price": 0.5,
+    "allergens": ["soy", "gluten"]
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8781" },
+    "name": "Cherry tomato",
+    "slot": "topping",
+    "description": "Sweet little bursts of sunshine.",
+    "image": "cherry.png",
+    "price": 0.3
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8782" },
+    "name": "Corn",
+    "slot": "topping",
+    "description": "Sweet, golden, and perfectly poppin'.",
+    "image": "corn.png",
+    "price": 0.3
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8783" },
+    "name": "Mango",
+    "slot": "topping",
+    "description": "Tropical sweetness in every bite.",
+    "image": "mango.png",
+    "price": 0.4
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8784" },
+    "name": "Pineapple",
+    "slot": "topping",
+    "description": "Sweet and tangy, the perfect balance.",
+    "image": "pineapple.png",
+    "price": 0.4
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8785" },
+    "name": "Cucumber",
+    "slot": "topping",
+    "description": "Cool, crisp, and refreshing crunch.",
+    "image": "cucumber.png",
+    "price": 0.2
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8786" },
+    "name": "Nori",
+    "slot": "sprinkle",
+    "description": "Seaweed sheets, perfect for add that sea touch.",
+    "image": "nori.png",
+    "price": 0.4
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8787" },
+    "name": "Beetroot",
+    "slot": "topping",
+    "description": "Earthy and sweet, nature' candy.",
+    "image": "beetroot.png",
+    "price": 0.3
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8788" },
+    "name": "Edamame",
+    "slot": "topping",
+    "description": "Protein-packed soybeans to fuel your day.",
+    "image": "edamame.png",
+    "price": 0.4,
+    "allergens": ["soy"]
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8789" },
+    "name": "Carrot",
+    "slot": "topping",
+    "description": "Crunchy and sweet",
+    "image": "carrot.png",
+    "price": 0.2
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd878a" },
+    "name": "Onion",
+    "slot": "topping",
+    "description": "Sharp, sweet, and all about that bite.",
+    "image": "onion.png",
+    "price": 0.2
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd878b" },
+    "name": "Avocado",
+    "slot": "topping",
+    "description": "Creamy and nutritious, avo-good time!",
+    "image": "avocado.png",
+    "price": 0.6
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd878c" },
+    "name": "Wakame",
+    "slot": "topping",
+    "description": "Seaweed salad that's packed with flavor.",
+    "image": "wakame.png",
+    "price": 0.6
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd878d" },
+    "name": "Feta cheese",
+    "slot": "topping",
+    "description": "Tangy, salty, and delicious Greek goodness.",
+    "image": "feta-cheese.png",
+    "price": 0.6,
+    "allergens": ["milk"]
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd878f" },
+    "name": "Radish",
+    "slot": "topping",
+    "description": "Spicy, crunchy, and refreshingly crisp.",
+    "image": "radish.png",
+    "price": 0.3
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8790" },
+    "name": "Crispy onion",
+    "slot": "sprinkle",
+    "description": "Crunchy and flavorful, fried to perfection.",
+    "image": "crispy-onion.png",
+    "price": 0.5,
+    "allergens": ["gluten"]
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8791" },
+    "name": "Spring onion",
+    "slot": "sprinkle",
+    "description": "Mild and sweet green onion topping.",
+    "image": "spring-onion.png",
+    "price": 0.3
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8792" },
+    "name": "Sesame seeds",
+    "slot": "sprinkle",
+    "description": "Tiny but mighty in flavor, nutty and delicious.",
+    "image": "sesame-seeds.png",
+    "price": 0.3,
+    "allergens": ["sesame"]
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8793" },
+    "name": "Cilantro",
+    "slot": "sprinkle",
+    "description": "A fresh, citrusy punch to any dish.",
+    "image": "cilantro.png",
+    "price": 0.3
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8794" },
+    "name": "Walnut",
+    "slot": "sprinkle",
+    "description": "Crunchy, nutty, and heart-healthy.",
+    "image": "walnut.png",
+    "price": 0.3,
+    "allergens": ["nuts"]
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8795" },
+    "name": "Tobiko",
+    "slot": "sprinkle",
+    "description": "Tiny fish roe that pops with flavor.",
+    "image": "tobiko.png",
+    "price": 0.9,
+    "allergens": ["fish"]
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8796" },
+    "name": "Chili flakes",
+    "slot": "sprinkle",
+    "description": "Spicy flakes to add some heat.",
+    "image": "chili-flakes.png",
+    "price": 0.5
+  },
+  {
+    "_id": { "$oid": "6670527fafb4f28ea1dd8797" },
+    "name": "Nooch",
+    "slot": "sprinkle",
+    "description": "Nutritional yeast that's cheesy without the cheese.",
+    "image": "nooch.png",
+    "price": 0.4
+  }
+]
