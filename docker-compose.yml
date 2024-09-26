@@ -2,11 +2,12 @@
 services:
   fastpoke-api:
     container_name: fastpoke-api
+    image: ghcr.io/javiink/fastpoke-backend:latest
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - ${APP_PORT:-80}:${APP_PORT:-80}
+      - ${APP_PORT:-80}:80
     networks:
       - fastpoke-net
     depends_on:
@@ -41,8 +42,6 @@ services:
       timeout: 10s
       retries: 5
       start_period: 10s
-    ports:
-      - '27020:27017'
     networks:
       - fastpoke-net
 

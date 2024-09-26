@@ -8,7 +8,7 @@ export const configValidationSchema = Joi.object({
     .allow('', null)
     .empty(['', null])
     .default('production'),
-  APP_PORT: Joi.number().allow('', null).empty(['', null]).default(3000),
+  APP_PORT: Joi.number().allow('', null).empty(['', null]).default(80),
   CORS_HOST: Joi.string().allow('', null).empty(['', null]).default(''),
   IMAGES_PATH: Joi.string()
     .allow('', null)
