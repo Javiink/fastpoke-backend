@@ -13,7 +13,7 @@ export const configValidationSchema = Joi.object({
   IMAGES_PATH: Joi.string()
     .allow('', null)
     .empty(['', null])
-    .default('public/images'),
+    .default('../public/images'),
 
   //DATABASE
   MONGODB_PROTOCOL: Joi.string()

@@ -21,14 +21,19 @@ import { OrdersModule } from './orders/orders.module';
     MongooseModule.forRootAsync({
       imports: [CustomConfigModule],
       useFactory: async (configService: CustomConfigService) => ({
-        uri: configService.database.uri
+        uri: configService.database.uri,
       }),
       inject: [CustomConfigService],
     }),
-    ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '../public'),
-      serveRoot: '/public/',
-    }),
+    ServeStaticModule.forRoot(
+      {
+        rootPath: join(__dirname, '../public'),
+        serveRoot: '/public/',
+      },
+      {
+        rootPath: join(__dirname, '../kiosk'),
+      }
+    ),
     IngredientsModule,
     BowlsModule,
     DrinksModule,
