@@ -5,6 +5,9 @@ export type OrderDocument = Order & Document;
 
 @Schema()
 export class Order {
+  @Prop({default: () => new Date()})
+  datetime?: Date;
+
   @Prop([{ type: String, refPath: 'itemTypes' }])
   items: string[];
 

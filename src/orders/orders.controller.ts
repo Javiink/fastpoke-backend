@@ -34,6 +34,7 @@ export class OrdersController {
       payed: createOrderDto.payed,
       takeout: createOrderDto.takeout
     };
+    Logger.log(`Created new order`);
     return this.ordersService.create(order);
   }
 }
