@@ -84,3 +84,9 @@ jobs:
         # This step uses the identity token to provision an ephemeral certificate
         # against the sigstore community Fulcio instance.
         run: echo "${TAGS}" | xargs -I {} cosign sign --yes {}@${DIGEST}
+
+      - name: Clear all caches
+        run: gh cache delete --all --repo ${{ env.REPO }}
+        env:
+          # This token requires the "repo" scope.
+          GITHUB_TOKEN: ${{ secrets.ACTION_CLEAR_CACHES_TOKEN }}
