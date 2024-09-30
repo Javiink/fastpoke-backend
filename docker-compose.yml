@@ -12,7 +12,7 @@ services:
       - fastpoke-net
     depends_on:
       - fastpoke-db
-    restart: always
+    restart: unless-stopped
 
   fastpoke-db:
     container_name: fastpoke-db
@@ -27,7 +27,7 @@ services:
       - MONGO_INITDB_USERNAME=${MONGODB_USERNAME:-fastpoke}
       - MONGO_INITDB_PASSWORD=${MONGODB_PASSWORD:-Ch4nG3m3pL34se}
       - MONGO_INITDB_DATABASE=${MONGODB_DATABASE:-fastpoke}
-    restart: always
+    restart: unless-stopped
     healthcheck:
       test:
         [
